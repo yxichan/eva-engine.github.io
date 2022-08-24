@@ -20,8 +20,8 @@ const gameObject = new GameObject('empty', {
 Because the transform object is very commonly used, we can get the component through `gameObject.transform`, for example, modify the width and height of the game object
 
 ```js
-gameObject.transform.size.width = 200
-gameObject.transform.size.height = 200
+gameObject.scene.transform.size.width = 200
+gameObject.scene.transform.size.height = 200
 ```
 
 Origin and anchor can help us solve common positioning problems, such as game operation keys, which are a certain percentage of the distance from the lower right corner under various screen sizes. You can take a look at this [Demo](https://eva.js.org/playground/#/anchor), the green dots are the anchor points of origin and anchor.
